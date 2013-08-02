@@ -7,13 +7,13 @@ $("#typo").fadeOut(250);
 // Catching selection of text to display send button
 $("p").mouseup(function() {
     if (window.getSelection() != "") {
-        $("#typo").fadeIn(750);
+        $("#typo").fadeIn(1500);
     }
 });
 
-$("html").mouseup(function() {
+$("p").mouseup(function() {
     if (window.getSelection() == "") {
-        $("#typo").fadeOut(1750);
+        $("#typo").fadeOut(3000);
     }
 });
 // The function to send the typo in an email
